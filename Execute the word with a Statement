@@ -8,8 +8,8 @@ public class Solution {
 
     public static void main(String[] args) {
        Scanner sp = new Scanner(System.in);
-        String name = sp.nextLine();
-        System.out.println("May I know how to learn C!!!...");
+        String name = sp.next();
+        System.out.println("May I know how to learn "+ name + "!!!...");
         
     }
 }
