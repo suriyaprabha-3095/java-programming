@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sp = new Scanner(System.in);
+        int num = sp.nextInt();
+        System.out.println(num);
+        float ft = sp.nextFloat();
+        System.out.printf("%.2f",ft);
+        
+    }
+}
