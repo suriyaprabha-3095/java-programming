@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner msp = new Scanner(System.in);
+        int a = msp.nextInt();  
+        int x = a / 10;      
+        int y = a % 10;     
+        int sum = x + y; 
+        System.out.println("Bird said:" + a);
+        System.out.println("Alice must go in path-" + sum);
+    }
+}
