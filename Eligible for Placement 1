@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sp = new Scanner(System.in);
+        String student = sp.next();
+        int arrear = sp.nextInt();
+        int cgpa = sp.nextInt();
+        System.out.println("Name of the Student:" + student);
+
+        if (arrear == 1 && cgpa > 70) {
+            System.out.println(student + " is Eligible for Placement");
+        } else if ((arrear == 1 || arrear == 2) && cgpa > 75) {
+            System.out.println(student + " is Eligible for Placement");
+        } else {
+            System.out.println(student + " is Not Eligible for Placement");
+        }
+            
+        
+    }
+}
