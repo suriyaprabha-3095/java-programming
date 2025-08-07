@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sp = new Scanner(System.in);
+        int n = sp.nextInt();
+        char chr = 'A';
+        if(n > 0 && n < 9){
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(chr++ +" ");
+            }
+            System.out.println();
+            }
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}    
