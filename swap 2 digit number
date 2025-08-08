@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner sp = new Scanner(System.in);
+        int num = sp.nextInt();
+        if(num>=10)
+        {
+            char a = String.valueOf(num).charAt(0);
+            char b = String.valueOf(num).charAt(1);
+            System.out.print(b);
+            System.out.print(a);
+        }
+        else
+        {
+            System.out.println("STDOUT");
+        }
+        
+        }
+}
