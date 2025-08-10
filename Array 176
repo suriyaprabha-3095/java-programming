@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sp = new Scanner(System.in);
+        int num = sp.nextInt();
+        
+        int door[]= new int[num];
+        for(int i=0;i<num;i++){
+            door[i]=sp.nextInt();
+        }
+            int house = sp.nextInt();
+        
+            int index = -1;
+        for (int i = 0; i < num; i++) {
+            if (door[i] == house) {
+                index = i;
+                break;
+            }
+        }
+         if (index != -1) {
+            System.out.printf("Door Number is %03d-DN", index);
+        } else {
+            System.out.println("-1");
+        }
+    }
+}
