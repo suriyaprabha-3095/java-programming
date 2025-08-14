@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ch = new Scanner(System.in);
+        int a = ch.nextInt();
+        int count = 0;
+        System.out.println("The Count the digits: " + count(Math.abs(a)));
+    }
+    static int count(int a){
+        if(a>1){
+             return 1+ count(a/10);
+        }
+        else{
+               return 1;
+        }
+    }
+}
