@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner suri = new Scanner(System.in);
+        int a = suri.nextInt();
+        if (a >= 0 && a < 100000) {
+            System.out.println(armstrong(a));
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+
+    static String armstrong(int a) {
+        int n = a;
+        int sum = 0;
+        int digits = String.valueOf(a).length();
+        while (a > 0) {
+            int rem = a % 10;
+            sum += (int) Math.pow(rem, digits);
+            a /= 10;
+        }
+        if (sum == n) {
+            return "yes";
+        } else {
+            return "no";
+        }
+    }
+}
